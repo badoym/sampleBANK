@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainpage.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+          <i class='bx bxl-c-plus-plus icon'></i>
+          <img src="images/bank1.svg" alt="">
+            <div class="logo_name">BANKO NI YEYE</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+              <i class='bx bx-search' ></i>
+             <input type="text" placeholder="Search...">
+             <span class="tooltip">Search</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Account Balance</span>
+            </a>
+             <span class="tooltip">Account Balance</span>
+          </li>
+          <li>
+           <a href="#">
+             <i class='bx bx-user' id="transfer Money"></i>
+             <span class="links_name" id="myBtn">Transfer Money</span>
+           </a>
+           <span class="tooltip" >Transfer Money</span>
+
+         </li>
+         
+         <li>
+           <a href="#">
+             <i class='bx bx-chat' ></i>
+             <span class="links_name">Deposit Money</span>
+           </a>
+           <span class="tooltip">Deposit Money</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-pie-chart-alt-2' ></i>
+             <span class="links_name">View Transactions</span>
+           </a>
+           <span class="tooltip">View Transactions</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-folder' ></i>
+             <span class="links_name">Payments</span>
+           </a>
+           <span class="tooltip">Payments</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-cart-alt' ></i>
+             <span class="links_name">Credit Card</span>
+           </a>
+           <span class="tooltip">Credit Card</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-cog' ></i>
+             <span class="links_name">Account Settings</span>
+           </a>
+           <span class="tooltip">Account Settings</span>
+         </li>
+         <li>
+            <a href="indext.html" onclick="logout();">
+              <i class='bx bx-cog' ></i>
+              <span class="links_name">Logout</span>
+            </a>
+            <span class="tooltip">Logout</span>
+          </li>
+        </ul>
+      </div>
+      <section class="home-section" id="account__balance">
+          <div class="home__content1">
+            <h4>SAVINGS ACCOUNT</h4>
+            <hr>
+            <h3>Account Name:</h3>
+            <h3 id="SaccountName"></h3>
+            <h3>Account Number:</h3>
+            <h3 id="SaccountNo"></h3>
+            <h4>Total Balance:</h4>
+            <h4 id="StotalBal"></h4>
+          </div>
+          <div class="home__content1">
+            <h4>CHECKING ACCOUNT</h4>
+            <hr>
+            <h3>Account Name:</h3>
+            <h3 id="CaccountName"></h3>
+            <h3>Account Number:</h3>
+            <h3 id="CaccountNo"></h3>
+            <h4>Total Balance:</h4>
+            <h4 id="CtotalBal"></h4>
+          </div>
+
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 class="modal_header">TRANSFER MONEY</h3>
+              <form action="" class="modal__transfer">
+                <input type="text"  placeholder="Account Number" class="account"><br>
+
+                <label for="">Transfer Money To:</label>
+                <input type="text" placeholder="Amount">
+                <label for="">Amount</label>
+                <input type="text" placeholder="Amount">
+              </form>
+            </div>
+          </div>
+      </section>
+      <script src="mainpage.js"></script>
+</body>
+</html>
